@@ -17,7 +17,7 @@ To Interact with Service:
 Utilizing tool such as Postman (https://www.postman.com/) or curl, the user 
    can perform add, deduct, and get balance actions as follows:
    
-   1) Add points to user account for specific payer and date. To perform,
+1) Add points to user account for specific payer and date. To perform,
     send PUT request to specific user route http://localhost:5001/[user]/add.
       * Example endpoint: http://localhost:5001/bill/add.
       * Body of message should be in the following exact JSON format:
@@ -29,18 +29,18 @@ Utilizing tool such as Postman (https://www.postman.com/) or curl, the user
             "transactionDate": "10/31/20 10:00AM"
         }
         ```
-        * Note that company is string, points is integer, and transactionDate
-    is of the form "MM/DD/YY HH:MM<AM/PM>"
+        * Note that company is a string, points is an integer, and transactionDate
+    is a string of the form "MM/DD/YY HH:MM<AM/PM>"
           
-    2)  Deduct points from a user account. To perform, send PUT request to 
+2) Deduct points from a user account. To perform, send PUT request to 
     specific user route with specific amount to deduct:
-        http://localhost:5001/user/deduct/amount.
+        http://localhost:5001/[user]/deduct/[amount].
         * Example endpoint: http://localhost:5001/bill/deduct/5000
         * Note that a user must first have points in memory to deduct points
-    
-    3)  Return point balance for a specific user per company. To perform,
+   
+3) Return point balance for a specific user per company. To perform,
     send GET request to specific user route 
-        http://localhost:5001/user/balance.
+        http://localhost:5001/[user]/balance.
         * Example endpoint: http://localhost:5001/bill/balance
         * Note that a user must first have points in memory for a list of point
           balances to return
