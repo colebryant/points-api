@@ -39,10 +39,10 @@ Utilizing tool such as Postman (https://www.postman.com/) or curl, the user
         * Note that a user must first have points in memory to deduct points
    
 3) Return point balance for a specific user per company. To perform,
-    send GET request to specific user route 
-        http://localhost:5001/[user]/balance.
-        * Example endpoint: http://localhost:5001/bill/balance
-        * Note that a user must first have points in memory for a list of point
+    send GET request to specific user route
+   http://localhost:5001/[user]/balance. 
+   * Example endpoint: http://localhost:5001/bill/balance
+   * Note that a user must first have points in memory for a list of point
           balances to return
 
 * Notes/ Assumptions:
