@@ -47,14 +47,14 @@ Utilizing tool such as Postman (https://www.postman.com/) or curl, the user
 
 * Notes/ Assumptions:
 
-1) Limiting ability for front end to cause user's total points for a company
+    * Limiting ability for front end to cause user's total points for a company
    to go negative or to deduct more points than user has in total. Sending an
    error message if this is the case. I am assuming a company's points cannot
    go negative.
    
-2) Data being sent to and from the service is in JSON format.
+    * Data being sent to and from the service is in JSON format.
    
-3) Utilizing standard hashtable data structure with in service to house service
+    * Utilizing standard dictionary data structure within service to house service
    memory. No durable data store such as SQL database.
      
 
