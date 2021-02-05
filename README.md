@@ -34,9 +34,9 @@ Utilizing tool such as Postman (https://www.postman.com/) or curl, the user
           
 2) Deduct points from a user account. To perform, send PUT request to 
     specific user route with specific amount to deduct:
-        http://localhost:5001/[user]/deduct/[amount].
-        * Example endpoint: http://localhost:5001/bill/deduct/5000
-        * Note that a user must first have points in memory to deduct points
+        http://localhost:5001/[user]/deduct/[amount]. 
+   * Example endpoint: http://localhost:5001/bill/deduct/5000
+   * Note that a user must first have points in memory to deduct points
    
 3) Return point balance for a specific user per company. To perform,
     send GET request to specific user route
