@@ -51,7 +51,6 @@ class Add(Resource):
         else:
             self.handle_negative_points(user, data['points'], data['company'],
                                         data['transactionDate'])
-        print(service_memory)
         return '', 201
 
 
